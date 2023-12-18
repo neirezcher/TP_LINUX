@@ -56,7 +56,7 @@ l'exécution d'actions variées.
 
 
 - Si le choix est 11, le script guide l'utilisateur à travers le
-  processus de connexion à une machine distante en utilisant** le
+  processus de connexion à une machine distante en utilisant **le
   protocole Telnet**. Il demande à l'utilisateur de spécifier l'URL et
   le port.
 

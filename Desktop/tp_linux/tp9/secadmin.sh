@@ -120,7 +120,16 @@ case $choice in
    		echo "Aucun fichier avec le bit SUID trouvé."
 	fi
 	;;
-7)	
+7)	# Utilisation de la commande find pour rechercher les fichiers avec le bit SUID
+	guid_files=$(find / -type f -perm /2000 2>/dev/null)
+
+	# Vérifier si des fichiers SUID ont été trouvés
+	if [ -n "$guid_files" ]; then
+    		echo -e "\nFichiers avec le bit GUID trouvés :"
+    		echo "$guid_files"
+	else
+   		echo "Aucun fichier avec le bit GUID trouvé."
+	fi
 	;;
 8)	
 	;;

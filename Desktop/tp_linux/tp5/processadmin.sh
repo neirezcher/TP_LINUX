@@ -22,7 +22,7 @@ case $choice in
 	| awk '{printf("%d\t%s\t%d\n", $2, $8, $3);}' \
 	| sort -n
 	;;
-3)	ps -ef | awk '{printf("%d\t%s\n", $2, $8);}'
+3)	ps -e | grep 'login'
 	;;
 4)	read -p "Donner l'utilisateur: " user
 	if [[ ! -z  "$user" ]]

@@ -1,5 +1,5 @@
 Ce script shell est une interface utilisateur simple qui permet de
-**gérer les modules du noyau Linux. **  
+**gérer les modules du noyau Linux**.  
 un menu est affiché à l'utilisateur, présentant différentes options.  
 En fonction du choix de l'utilisateur, le script exécute différentes
 actions à l'aide d'une structure de contrôle **`case`** :
@@ -13,7 +13,7 @@ actions à l'aide d'une structure de contrôle **`case`** :
 
 
 - Si le choix est 2, le script demande à l'utilisateur de fournir le nom
-  d'un module, puis utilise **`sudo modprobe -r` **pour décharger
+  d'un module, puis utilise **`sudo modprobe -r`** pour décharger
   (désactiver) ce module.
 
 
